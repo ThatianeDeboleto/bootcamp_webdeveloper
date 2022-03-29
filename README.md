@@ -19,8 +19,7 @@ jQuery
 Bash Command Line  
 Git, GitHub and Version Control 
 Backend Web Development  
-Node.js 
-NPM  
+Node.js
 Express.js 
 EJS  
 REST 
@@ -33,5 +32,6 @@ Authentication
 Firebase  
 React.js  
 React Hooks 
+NPM  
 Web Design  
 Deployment with GitHub Pages, Heroku and MongoDB Atlas
