@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>Planner Deboleto's</title>
+</head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center" id="header">
+        <i class="fas fa-book-open text-info">
+          </i> Planner<span class="text-info"> De</span> Tarefas</h1>
+
+        <form id="schedule-form">
+          <div class="form-group">
+            <label for="time">Hora de início</label>
+              <input type="text" id="time" class="form-control">
+          </div>
+             <div class="form-group">
+                <label for="event">Evento</label>
+                  <input type="text" id="event" class="form-control">
+             </div>
+                <div class="form-group">
+                  <label for="additional-notes">Adicionar detalhes</label>
+                    <input type="text" id="details" class="form-control mb-5">
+                </div>
+            <input type="submit" value="Add Event" class="btn btn-primary btn-block">
+        </form>
+
+      <table class="table table-striped mt-5 mb-5">
+            <thead>
+                <tr class="table-primary">
+                    <th id="row">Hora de inicio</th>
+                      <th id="row">Evento</th>
+                    <th id="row">Adicionar detalhes</th>
+                </tr>
+            </thead>
+        <tbody id="event-list"></tbody>
+      </table>
+   </div>
+        <script src="app.js"></script>
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   </body>
+</html>

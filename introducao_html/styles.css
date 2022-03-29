@@ -1,0 +1,19 @@
+
+#header {
+    background-color: lightgrey;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+.btn {
+    border-radius: 30px;
+    background-color: lightgrey;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+#row {
+    color: white;
+}
