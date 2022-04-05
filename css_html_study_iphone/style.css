@@ -1,0 +1,161 @@
+* {
+		margin: 0px;
+		padding: 0px;
+	}
+	html, body {
+		min-width: 435px;
+		min-height: 1000px;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	div.background {
+		position: absolute;
+		top: 0px; left: 0px;
+		min-width: 435px;
+		min-height: 1000px;
+		height: 100%; width: 100%;
+		background: #f09c47 url('https://hoidrop.s3-us-west-2.amazonaws.com/cp_social_app_background.jpg') no-repeat center center;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+
+	div.circle {
+		height: 77px; width: 77px;
+		background: url('https://hoidrop.s3-us-west-2.amazonaws.com/cp_social_app_circle.png');
+		position: absolute;
+		top: 50%; left: 50%;
+		z-index: 200;
+		margin: -328px 0px 0px -180px;
+		pointer-events: none;
+		animation: pulse 5s infinite;
+		-webkit-animation: pulse 1.5s infinite;
+		opacity: 0;
+	}
+		@keyframes pulse {
+			0%   { opacity: 0; }
+			50%  { opacity: 1; }
+			100% { opacity: 0; }
+		}
+		@-webkit-keyframes pulse {
+			0%   { opacity: 0; }
+			50%  { opacity: 1; }
+			100% { opacity: 0; }
+		}
+
+
+
+
+/*	The Device */
+
+	div.iphone {
+		height: 810px; width: 435px;
+		position: absolute;
+		margin: auto;
+		top: 0px; bottom: 80px; left: 0px; right: 0px;
+		background: url('https://hoidrop.s3-us-west-2.amazonaws.com/cp_social_app_iphone.png') no-repeat center center;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+	div.screen {
+		height: 568px; width: 320px;
+		position: absolute;
+		top: 119px; left: 59px;
+		overflow: hidden;
+		position: relative;
+	}
+
+
+/*	Content */
+	div.menu {
+		position: absolute;
+		height: 100%; width: 100%;
+		background: url('https://hoidrop.s3-us-west-2.amazonaws.com/cp_social_app_blur.jpg') no-repeat center center;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+		div.menu ul {
+			width: 600px;
+			list-style: none;
+			margin: 95px 0px 0px 75px;
+		}
+		div.menu li {
+			font-family: 'HelveticaNeue-UltraLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', sans-serif;
+			font-weight: 200;
+			font-size: 19px;
+			line-height: 19px;
+			margin-bottom: 28px;
+
+			-webkit-transition: all 400ms ease-in-out, opacity 1000ms ease;
+			   -moz-transition: all 400ms ease-in-out, opacity 1000ms ease;
+			    -ms-transition: all 400ms ease-in-out, opacity 1000ms ease;
+			     -o-transition: all 400ms ease-in-out, opacity 1000ms ease;
+			        transition: all 400ms ease-in-out, opacity 1000ms ease;
+			-webkit-transform: translate3d(-150px, 0px, 0px) scale(0.2);
+			opacity: 0;
+		}
+		div.menu li.visible {
+			-webkit-transform: translate3d(0px, 0px, 0px) scale(1);
+			opacity: 1;
+		}
+		div.menu li a {
+			color: rgba(255,255,255,0.9);
+			text-decoration: none;
+		}
+
+	div.status {
+		position: absolute;
+		top: 0px; left: 0px;
+		z-index: 200;
+		height: 20px; width: 100%;
+		background: url('https://hoidrop.s3-us-west-2.amazonaws.com/cp_social_app_status_black.png') no-repeat center center;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+	div.status.active {
+		background-image: url('https://hoidrop.s3-us-west-2.amazonaws.com/cp_social_app_status_white.png');
+	}
+
+	div.content {
+		position: absolute;
+		top: 0px; left: 0px;
+		height: 568px; width: 320px;
+		background: #f09c47 url('img.png') no-repeat center center;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		-webkit-transition: all 300ms ease-in-out;
+		   -moz-transition: all 300ms ease-in-out;
+		    -ms-transition: all 300ms ease-in-out;
+		     -o-transition: all 300ms ease-in-out;
+		        transition: all 300ms ease-in-out;
+		-webkit-backface-visibility: hidden;
+	}
+		div.content.inactive {
+			cursor: pointer;
+			-webkit-transform: translate3d(160px, 0px, 0px) scale(0.5);
+			   -moz-transform: translate3d(160px, 0px, 0px) scale(0.5);
+			    -ms-transform: translate3d(160px, 0px, 0px) scale(0.5);
+			        transform: translate3d(160px, 0px, 0px) scale(0.5);
+		}
+
+
+		div.button {
+			width: 30px; height: 30px;
+			position: absolute;
+			top: 23px; left: 3px;
+			cursor: pointer;
+		}
