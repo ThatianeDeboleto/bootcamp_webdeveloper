@@ -1,0 +1,265 @@
+.minion {
+    position: relative;
+    width: $minionSize*.7;
+    height: $minionSize;
+    border-radius: $minionSize*.5 $minionSize*.5 $minionSize*.2 $minionSize*.2;
+    //margin: $minionSize*.55 auto 20px;
+    background: $minionColor;
+  }
+  
+  .bodyhead {
+    position: relative;
+    width: $minionSize*.7;
+    height: $minionSize+90;
+    border-radius: $minionSize*.5 $minionSize*.5 $minionSize*.3 $minionSize*.3;
+    margin: $minionSize*.1 auto 20px;
+    background: $minionColor;
+  }
+
+  .hands {
+    position: absolute;
+    //background: red;
+    margin-top: $minionSize*.65;
+    margin-left: -$minionSize*.12;
+    width: $minionSize*.95;
+    height: $minionSize*.55;
+    border-radius: $minionSize*.4 $minionSize*.4 0 0;
+    z-index: auto;
+    border-top: $minionSize*.08 solid $minionColor;
+    border-left: $minionSize*.08 solid $minionColor;
+    border-right: $minionSize*.08 solid $minionColor;
+  }
+
+  .wrist {
+    position: absolute;
+    background: black;
+    width: $minionSize*.12;
+    height: $minionSize*.05;
+    border-radius: $minionSize*.1 $minionSize*.1 $minionSize*.1 $minionSize*.1;
+  }
+  
+  .wrist-right {
+    @extend .wrist;
+    margin-top: $minionSize*1.15;
+    margin-left: -$minionSize*.14;
+  }
+
+  .wrist-left {
+    @extend .wrist;
+    margin-top: $minionSize*1.15;
+    margin-left: $minionSize*.73;
+  }
+
+  .fingers {
+    position: absolute;
+    background: black;
+    width: $minionSize*.17;
+    height: $minionSize*.1;
+    border-radius: 45%;
+  }
+
+  .fingers-right {
+      @extend .fingers;
+      margin-top: $minionSize*1.19;
+      margin-left: $minionSize*.705;
+  }
+
+  .fingers-right::before {
+      content: '';
+    position: absolute;
+    background: black;
+    width: $minionSize*.1;
+    height: $minionSize*.1;
+    border-radius: 45%;
+    margin-top: $minionSize*.04;
+    margin-left: $minionSize*.02;
+  }
+
+  .fingers-right::after {
+    content: '';
+  position: absolute;
+  background: black;
+  width: $minionSize*.1;
+  height: $minionSize*.1;
+  border-radius: 45%;
+  margin-top: $minionSize*.04;
+  margin-left: $minionSize*.07;
+}
+
+.fingers-left {
+    @extend .fingers;
+    margin-top: $minionSize*1.19;
+    margin-left:-$minionSize*.16;
+}
+
+.fingers-left::before {
+    content: '';
+  position: absolute;
+  background: black;
+  width: $minionSize*.1;
+  height: $minionSize*.1;
+  border-radius: 45%;
+  margin-top: $minionSize*.04;
+  margin-left: -$minionSize*.001;
+}
+
+.fingers-left::after {
+  content: '';
+position: absolute;
+background: black;
+width: $minionSize*.1;
+height: $minionSize*.1;
+border-radius: 45%;
+margin-top: $minionSize*.04;
+margin-left: $minionSize*.05;
+}
+
+.legs {
+    position: absolute;
+    background: #1565C0;
+    width: $minionSize*.15;
+    height: $minionSize*.3;
+    
+}
+
+.legs-right {
+    @extend .legs;
+    margin-top: $minionSize*1.14;
+    margin-left: $minionSize*.4;
+    border-radius: 0 0 100% 0;
+}
+
+.legs-left {
+    @extend .legs;
+    margin-top: $minionSize*1.14;
+    margin-left: $minionSize*.17;
+    border-radius: 0 0 0 100%;
+}
+
+.shoes {
+    position: absolute;
+    background: black;
+    width: $minionSize*.17;
+    height: $minionSize*.07;
+    
+}
+
+.shoes-right {
+    @extend .shoes;
+    border-radius: 20% 100% 10% 10%;
+    margin-top: $minionSize*1.37;
+    margin-left: $minionSize*.399;
+}
+
+.shoes-left {
+    @extend .shoes;
+    border-radius: 100% 20% 10% 10%;
+    margin-top: $minionSize*1.37;
+    margin-left: $minionSize*.15;
+}
+
+  .strap {
+    position: absolute;
+    background: black;
+    width: $minionSize*.72;
+    height: $minionSize*.1;
+    margin-top: $minionSize*.35;
+    margin-left: -$minionSize*.01;
+    border-radius: $minionSize*.02;
+  }
+
+  .pocket {
+    position: absolute;
+    background: #27354A;
+    width: $minionSize*.25;
+    height: $minionSize*.15;
+    border-radius: 0 0 50% 50%;
+    margin-top: $minionSize*.9;
+    margin-left: $minionSize*.23;
+    z-index: 2;
+  }
+  
+  .eye {
+    position: absolute;
+    background: white;
+    width: $minionSize*.31;
+    height: $minionSize*.31;
+    top: 20%;
+    border: $minionSize/25 solid #27354A;
+    border-radius: 50%;
+  }
+  
+  .eye-left{
+    @extend .eye;
+    left: 7%;
+    z-index: 3;
+  }
+  .eye-right{
+    @extend .eye;
+    right: 7%;
+    z-index: 2;
+  }
+  
+  .pupil{
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    top: 25%;
+    left: 28%;
+    border-radius: 50%;
+    background: #27354A;
+    border: $minionSize/52 solid #6D4C41;
+  
+  }
+  
+  .lips {
+    position: absolute;
+    width: $minionSize*.3;
+    height: $minionSize*.2;
+    margin-top: $minionSize*.48;
+    margin-left: $minionSize*.20;
+    border-bottom: $minionSize*.02 solid #424242;
+    border-radius: 50%;
+  }
+  
+  .pants {
+    position: absolute;
+    background: #1565C0;
+    margin-top: $minionSize*.95;
+    margin-left: $minionSize*.001;
+    width: $minionSize*.7;
+    height: $minionSize*.3;
+    border-radius: 0 0 $minionSize*.2 $minionSize*.2;
+  }
+
+  .pants-patch {
+    position: absolute;
+    background: #1565C0;
+    margin-top: $minionSize*.78;
+    margin-left: $minionSize*.15;
+    width: $minionSize*.4;
+    height: $minionSize*.20;
+  }
+
+  .pants-strap {
+    position: absolute;
+    background: #1565C0;
+    width: $minionSize*.25;
+    height: $minionSize*.07;
+    
+  }
+
+  .pants-strap-right {
+    @extend .pants-strap;
+    margin-top: $minionSize*.73;
+    margin-left: $minionSize*.482;
+    transform:rotate(150deg);
+  }
+
+  .pants-strap-left {
+    @extend .pants-strap;
+    margin-top: $minionSize*.73;
+    margin-left: -$minionSize*.03;
+    transform:rotate(-150deg);
+  }
+

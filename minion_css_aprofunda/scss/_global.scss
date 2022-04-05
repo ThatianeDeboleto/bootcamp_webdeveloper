@@ -1,0 +1,41 @@
+
+html, body {
+  max-height: 100vh;
+  min-width: $minionSize*1.5;
+  margin: 0;
+  background: $skyTop;
+}
+
+a {
+  color: darkslategray;
+  
+}
+a:hover {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+.wrapper {
+  margin-top: $minionSize*.1;
+  max-width: 960px;
+  max-height: $minionSize*1.5;
+  padding-right: 10px;
+  padding-left:  10px;
+}
+
+.box{
+  position: initial;
+  margin: auto;
+  display: block;
+  margin-top: $minionSize*.6;
+  width: $minionSize*1.5;
+  height: 420px;
+  background: none;
+
+}
+
+  .header {
+      position: initial;
+      display: block;
+      margin-top: $minionSize*.01;
+  }
