@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+    background-image: linear-gradient(270deg, #d16afb 0, #b257ef 25%, #8f43e2 50%, #6730d5 75%, #3523ca 100%);
+    background-size: cover;
+    font-family: 'Rubik Bubbles', sans-serif;
+    text-align: center;
+  }
+
+  body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  h2, h3 {
+    font-weight: 500;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 8rem;
+}
+
+  .clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid rgb(226, 226, 226);
+    background: linear-gradient(to top left, rgb(243, 243, 243), #fff);
+    border-radius: 50%;
+    margin: 1rem auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(0, 0, 0, 0.1),
+      inset 0 0 0 5px  rgb(169, 169, 170),
+      inset 0 0 15px rgba(0, 0, 0, 0.863),
+      0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media only screen and (max-width: 240px){
+    body {
+      justify-content: center;
+    }
+
+    h1, h2, h3, .clock {
+      margin: 0 0;
+      display: block;
+      transform: scale(0.4);
+      padding: 0;
+    }
+
+  }
+
+  em {
+    position: absolute;
+    font: 3rem bold;
+  }
+
+  .nine {
+    left: 2rem;
+    top: 15.25rem;
+  }
+
+  .twelwe {
+    top: 2rem;
+    left: 15.25rem;
+  }
+
+  .three {
+    right: 2rem;
+    top: 15.25rem;
+  }
+
+  .six {
+    bottom: 2rem;
+    left: 16.25rem;
+  }
+
+  .ticks {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+  }
+
+  .one,
+  .two,
+  .four,
+  .five,
+  .seven,
+  .eight,
+  .ten,
+  .eleven {
+    width: 14.75rem;
+    height: 6px;
+    position: absolute;
+    top: 14.75rem;
+    left: 0;
+    transform-origin: 100%;
+    border: 1px solid rgb(12, 12, 12,0);
+    transform: translateY(-1.5px);
+  }
+
+  span {
+    width: 15%;
+    height: 3px;
+    background-color: rgb(34, 32, 32);
+    position: inherit;
+    left: 0;
+    bottom: 1.25px;
+  }
+
+  .ten {transform: rotate(30deg);}
+  .eleven {transform: rotate(60deg);}
+  .one {transform: rotate(120deg);}
+  .two {transform: rotate(150deg);}
+  .four {transform: rotate(210deg);}
+  .five {transform: rotate(240deg);}
+  .seven {transform: rotate(300deg);}
+  .eight {transform: rotate(330deg);}
+
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translate(-3px,-3px,0); /*height of clock hands /2 */
+  }
+
+  .hand {
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 49.5%;
+    left: 0;
+    transform: rotate(90deg);
+    transition: all .01s ease-out;
+      /*start at 12*/
+    transform-origin: 100%;
+    border-radius: 50% 0% 0% 50%;
+  }
+
+  .hour-hand {
+    width: 35%;
+    left: 15%;
+  }
+
+  .min-hand {
+    width: 50%;
+  }
+
+  .second-hand {
+    width: 50%;
+    height: 4px;
+    background: rgb(231, 19, 19);
+  }
+
+  .dot {
+    width: 3%;
+    height: 3%;
+    position: absolute;
+    background-color: rgb(239, 240, 235);
+    top: calc(50% - 3%/2);
+    left: calc(50% - 3%/2);
+    border-radius: 100%;
+    z-index: 1;
+    box-shadow: 0 0 0 .2px rgba(0, 0, 0, 0.801);
+  }
