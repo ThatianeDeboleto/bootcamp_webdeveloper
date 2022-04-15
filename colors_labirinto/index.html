@@ -1,0 +1,48 @@
+
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+ <title>Labirinto</title>
+<link rel="stylesheet" href="styles.css">
+  <body>
+    <div id="gradient"></div>
+    <div id="page">
+      <div id="Message-Container">
+        <div id="message">
+          <h1>Parabéns!</h1>
+          <p>Você terminou.</p>
+          <p id="moves"></p>
+          <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Cool!" />
+        </div>
+      </div>
+      <div id="menu">
+        <div class="custom-select">
+          <select id="diffSelect">
+                    <option value="10">Fácil</option>
+                    <option value="15">Medio</option>
+                    <option value="25">Dificil</option>
+                    <option value="38">++Dificil</option>
+                </select>
+        </div>
+        <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Start" />
+      </div>
+      <div id="view">
+        <div id="mazeContainer">
+          <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+   <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/thatiane-deboleto">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/ThatianeDeboleto">Github</a>
+    <a class="footer-link" href="https://thatianedeboleto.github.io/Deboleto/">Portfólio</a>
+    <p class="copyright">© 2022 Thatiane Deboleto.</p>
+   </div>
+</body>
+</html>
+
+</body>
+</html>
