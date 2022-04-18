@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+body{
+font-family: 'Work Sans', sans-serif;
+background: #0000;
+
+}
+
+.card{
+background-image: radial-gradient(circle at 87.5% 12.5%, #f56a4e 0, #ee7042 8.33%, #e77636 16.67%, #df7c2b 25%, #d5821f 33.33%, #cb8814 41.67%, #c08d07 50%, #b49200 58.33%, #a89700 66.67%, #9b9b02 75%, #8d9e0f 83.33%, #7ea21c 91.67%, #6ea528 100%);
+border-radius:14px; max-width: 300px; display:block; margin:auto;
+padding:60px; padding-left:20px; padding-right:20px;box-shadow: 2px 10px 40px black; z-index:99;
+}
+
+.logo-card{max-width:50px; margin-bottom:15px; margin-top: -19px;}
+
+label{display:flex; font-size:10px; color:white; opacity:.4;}
+
+input{font-family: 'Work Sans', sans-serif;background:transparent; border:none; border-bottom:1px solid transparent; color:#dbdce0; transition: border-bottom .4s;}
+input:focus{border-bottom:1px solid #1abc9c; outline:none;}
+
+.cardnumber{display:block; font-size:20px; margin-bottom:8px; }
+
+.name{display:block; font-size:15px; max-width: 200px; float:left; margin-bottom:15px;}
+
+.toleft{float:left;}
+.ccv{width:50px; margin-top:-5px; font-size:15px;}
+
+.receipt{background: #dbdce0; border-radius:4px; padding:5%; padding-top:200px; max-width:600px; display:block; margin:auto; margin-top:-180px; z-index:-999; position:relative;}
+
+.col{width:50%; float:left;}
+.bought-item{background:#001E6C; padding:2px;}
+.bought-items{margin-top:-3px;}
+
+.cost{color:#3a7bd5;}
+.seller{color: #3a7bd5;}
+.description{font-size: 13px;}
+.price{font-size:12px;}
+.comprobe{text-align:center;}
+.proceed{position:absolute; transform:translate(300px, 10px); width:50px; height:50px; border-radius:50%; background:#1abc9c; border:none;color:white; transition: box-shadow .2s, transform .4s; cursor:pointer;}
+.proceed:active{outline:none; }
+.proceed:focus{outline:none;box-shadow: inset 0px 0px 5px white;}
+.sendicon{filter:invert(100%); padding-top:2px;}
+
+@media (max-width: 600px){
+  .proceed{transform:translate(250px, 10px);}
+  .col{display:block; margin:auto; width:100%; text-align:center;}
+}
