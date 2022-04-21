@@ -1,0 +1,262 @@
+/*======================================== LAYOUT ======================================== */
+
+html, body, .cover{
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    background: url('img/cover.png'),
+                url('img/noise.png'),
+                linear-gradient(50deg,#a29dc7, #9069c7);
+    background-attachment: fixed;
+    font-family: Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+
+/* === Navbar === */
+.img-logo {
+    background: url('img/spotify.svg') no-repeat;
+    background-size: contain;
+    color: transparent;
+    display: block;
+    height: 40px;
+    width: 132px;
+}
+
+header.navbar-transparent {
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    padding: 15px 0px;
+    box-sizing: inherit;
+}
+
+.divisor{
+    background: white;
+    height: 16px;
+    margin: 12px 10px;
+    width: 1px;
+}
+
+.navbar-dark .navbar-nav .nav-link , footer .nav a{
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover , footer .nav a:hover{
+    color: #9BF0E1;
+    text-decoration: none;
+}
+
+/* === Cover === */
+
+.cover {
+    display: table;
+    width: 100%;
+}
+
+.cover-text {
+    color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* === Buttons === */
+
+.btn-custom {
+    background: #7C25F8;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.btn-custom:hover {
+    background-color: #6207E3;
+    color: white;
+}
+
+
+.btn-outline {
+    border: 1px solid white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    margin: 0px 15px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+}
+
+.btn-outline:hover {
+    color: black;
+}
+
+/* === Services === */
+
+#services {
+    background: white;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+.album {
+    height: 230;
+    padding: 10px  10px 10px 10px;
+    width: 230;
+}
+
+/* === Resources === */
+
+#resources {
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.rotation {
+    padding-left: 43px;
+    transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg); 
+}
+
+/* === Footer === */
+
+footer {
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+.social-network {
+    padding: 20px;
+}
+
+.tamanho {
+    height: 200px;
+    width: 400px;
+}
+
+/*======================================== TYPOGRAPHY ======================================== */
+
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#footer h4 {
+    color: #919496;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#services h2, #services h3 {
+    color: #7C25F8;
+}
+
+#resources h3 {
+    color: #9BF0E1;
+}
+
+/*======================================== MEDIA QUERIES ======================================== */
+
+/* phones < 768*/
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+
+    .img-logo {
+        background: url('img/spotify.svg') no-repeat;
+        background-size: contain;
+        color: transparent;
+        display: block;
+        height: 25px;
+        width: 118px;
+    }
+
+    #services h2, #services h3 {
+        color: #7C25F8;
+        font-size: 28px;
+    }
+
+    .delete-phone {
+        display: none;
+    }
+    
+}
+    /* tablets  */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+
+    .img-logo {
+        background: url('img/spotify.svg') no-repeat;
+        background-size: contain;
+        color: transparent;
+        display: block;
+        height: 25px;
+        margin-left: 160px;
+    }
+
+    #services h2, #services h3 {
+        color: #7C25F8;
+        font-size: 28px;
+    }
+
+    .delete-phone {
+        display: none;
+    }
+
+    
+}
+
+/* desktops  */
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .delete-desktop {
+        display: none;
+    }
+    
+}
+
+/* larger desktops  */
+
+@media screen and (min-width: 993px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    .delete-desktop {
+        display: none;
+    }
+}
+
