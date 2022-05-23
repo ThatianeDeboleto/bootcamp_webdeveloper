@@ -1,0 +1,83 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    background: #B0E9D0;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    min-height: 100%;
+    position: relative;
+}
+
+.title {
+    margin-bottom: 30px;
+    color: #162969;
+}
+
+.form-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    grid-column-gap: 10px;
+    grid-gap: 15px;
+    margin-bottom: 50px;
+}
+
+.card-backgrounds {
+    margin-top: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+
+.background {
+    width: 150px;
+    height: 70px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-backgrounds {
+        padding: unset;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
